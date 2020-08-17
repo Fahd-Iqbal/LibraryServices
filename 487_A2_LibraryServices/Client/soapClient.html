@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Loan Application</title>
+    </head>
+    <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="jquery.soap.js"></script>
+	<script src="myscripts.js"></script>
+
+	
+    <h1> Loan Management </h1>
+	<a href="restClient.html">Book Management</a><br><a href="memberClient.html">Member Management</a>
+	<br><br>
+	<button onclick=getLoans()> Display all loans </button>
+	<br><br>
+	<button onclick=getLoan()> Display loan </button>
+	<input type="text" placeholder="Enter a loan id" id=2></input>
+	<br><br>
+	<button onclick=addLoan()> Add Loan </button>
+	<table>
+		<tr>
+		<th>BookId</th>
+		<th>MemberId</th>
+		<th>Takeout date</th>
+		<th>Return date</th>
+		</tr>
+		<tr>
+		<td><input type="text" placeholder="BookId" id="b"></input></td>
+		<td><input type="text" placeholder="Member" id="m"></input></td>
+		<td><input type="text" placeholder="Takeout date" id="t"></input></td>
+		<td><input type="text" placeholder="Return Date" id="r"></input></td>
+		</tr>
+	</table>
+	<br>
+	<button onclick=deleteLoan()> Delete loan </button>
+	<input type="text" placeholder="Enter book id" id=3></input>
+	<br><br>
+	<button onclick=updateLoan()> Update loan </button>
+	<input type="text" placeholder="Enter book id" id=4></input>
+	<input type="text" placeholder="Enter takeout date" id=5></input>
+	<input type="text" placeholder="Enter return date" id=6></input>
+	<div id=1></div>
+	</body>
+</html>

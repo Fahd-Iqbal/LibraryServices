@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Member Application</title>
+    </head>
+    <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="jquery.soap.js"></script>
+	<script src="myscripts.js"></script>
+
+	
+    <h1>Member Management </h1>
+	<a href="restClient.html">Book Management</a><br><a href="soapClient.html">Loan Management</a>
+	<br><br>
+	<button onclick=getMembers()> Display all members </button>
+	<br><br>
+	<button onclick=getMember()> Display member </button>
+	<input type="text" placeholder="Enter a member id" id=2></input>
+	<br><br>
+	<button onclick=addMember()> Add member </button>
+	<table>
+		<tr>
+		<th>First name</th>
+		<th>Last name</th>
+		<th>contact</th>
+		</tr>
+		<tr>
+		<td><input type="text" placeholder="firstname" id="f"></input></td>
+		<td><input type="text" placeholder="lastname" id="l"></input></td>
+		<td><input type="text" placeholder="contact" id="c"></input></td>
+		</tr>
+	</table>
+	<br>
+	<button onclick=deleteMember()> Delete member </button>
+	<input type="text" placeholder="Enter member id" id=4></input>
+	<br><br>
+	<button onclick=updateMember()> Update member </button>
+	<table>
+		<tr>
+		<th>id</th>
+		<th>attribute to update</th>
+		<th>new walue</th>
+		</tr>
+		<tr>
+		<td><input type="text" placeholder="Id" id="5"></input></td>
+		<td><select id="6">
+			  <option value="1">Name</option>
+			  <option value="2">Contact</option>
+			</select></td>
+		<td><input type="text" placeholder="New value" id="7"></input></td>
+		</tr>
+	</table>
+	<div id=1></div>
+	</body>
+</html>
